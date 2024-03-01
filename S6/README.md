@@ -1,8 +1,4 @@
 
-Here's how I would structure a README.md file to guide someone (even a 12-year-old) through the concepts of backpropagation in an Excel sheet and a related machine learning assignment.
-
-**README.md**
-
 **Project Title:** Understanding Backpropagation and Building a Super Smart Image Recognizer
 
 **What is this project about?**
@@ -41,10 +37,7 @@ Here's how I would structure a README.md file to guide someone (even a 12-year-o
 
 4. **Challenge Time!** Your mission is to build your own image recognizer using these tools. Experiment, try different things, it's like playing detective with the computer! 
 
-**Important:**
 
-* **Take your time:** Learning takes time, so don't get frustrated. It's more important to understand a little well than to rush through it.
-* **Ask Questions:**  If you ever get confused, don't be afraid to ask! 
 
 **Let's get started!** 
 [Include instructions to find the Excel sheet and project code on GitHub] 
