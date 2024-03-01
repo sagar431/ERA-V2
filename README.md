@@ -1,6 +1,4 @@
-Absolutely! Here's a more comprehensive README.md with summaries for each session. Remember, I don't have specific knowledge of the School of AI course content, so you'll need to customize the summaries and assignments to align with your actual work.
 
-**README.md**
 
 **Title:**
 
