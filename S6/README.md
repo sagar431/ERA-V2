@@ -22,9 +22,9 @@
    * We'll try different learning rates and see how the computer's guesses change.
 
 4.This part involves using MS Excel to perform backprop on a arbitrary defined Neural network.
-  *![Alt text](backprop.png)
+  *![Alt text](comparing.png)
 
-**Part 2: Building a Super Accurate Image Recognizer**
+**Part 2: Building a MNIST **
 
 1. **Goal:** Make our computer program get almost everything right (like 99.4%!) when it guesses what's in an image.
 
