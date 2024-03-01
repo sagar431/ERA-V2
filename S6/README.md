@@ -15,13 +15,14 @@
 2. **Excel Time!**
    * We'll use an Excel sheet to see backpropagation in action. It will have lots of numbers, but don't worry – we'll explain it step by step.
    * Think of it like solving a math problem where you correct the computer's answers each time to make it better at solving similar problems.
+   * ![Alt text](Screenshot 2.png)
 
 3. **Learning Rate**
    * This is a special number that controls how quickly our computer detective learns. Think of it like the size of steps it takes with each guess.
    * We'll try different learning rates and see how the computer's guesses change.
 
-4. **GitHub**
-   * It's a bit like a giant online notebook where we can store and share our project with anyone in the world.
+4.This part involves using MS Excel to perform backprop on a arbitrary defined Neural network.
+  *![Alt text](backprop.png)
 
 **Part 2: Building a Super Accurate Image Recognizer**
 
