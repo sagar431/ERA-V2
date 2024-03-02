@@ -2,7 +2,10 @@
 
 **Title:**
 
-* **My AI Odyssey: Mastering Deep Learning Concepts** 🚀 
+* **My AI Odyssey: Mastering Deep Learning Concepts** 🚀
+
+  
+![MasterHead](https://media.licdn.com/dms/image/C4D12AQHdpDAGD5uy-Q/article-inline_image-shrink_1500_2232/0/1616944651622?e=1714608000&v=beta&t=p79aZn3QNCwy3FWXVcwhPM6F9Pza7l0rkDOPwuuMvbc)
 
 **Brief Description:**
 
