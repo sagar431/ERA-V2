@@ -25,7 +25,80 @@ The YOLOv9 model was trained on Amazon SageMaker Studio using a custom dataset o
 1. **Data Preparation**: Collected and annotated images of manholes.
 2. **Model Configuration**: Configured the YOLOv9 model parameters and architecture.
 3. **Training**: Trained the model on SageMaker Studio with the prepared dataset.
-4. ![Example Image](images/image2.png)
+ ![Example Image](images/image2.png)
+4.Traning steps
+   Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      88/99      12.9G     0.3369     0.2965      0.929         25        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.884      0.928      0.946      0.895
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      89/99      12.9G     0.3211      0.294     0.9137         23        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.909      0.893      0.941      0.882
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      90/99      12.9G     0.3215     0.2872     0.9162         20        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.931      0.911      0.951      0.898
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      91/99      12.9G     0.3139     0.2806      0.906         22        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.931      0.926      0.953      0.901
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      92/99      12.9G     0.3083     0.2685     0.9045         22        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.945      0.892      0.958      0.902
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      93/99      12.9G     0.3084       0.27     0.9052         16        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.946      0.874       0.95      0.898
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      94/99      12.9G      0.294     0.2464     0.8971         22        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.952      0.871      0.942      0.891
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      95/99      12.9G     0.2977      0.244     0.8969         16        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.939      0.873       0.94      0.893
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      96/99      12.9G     0.2887     0.2444     0.8925         16        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.923      0.884      0.946      0.898
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      97/99      12.9G     0.2822     0.2319     0.8897         22        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.923      0.884      0.946      0.897
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      98/99      12.9G     0.2892     0.2422     0.8928         22        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.901      0.911      0.951      0.901
+   
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      99/99      12.9G     0.2816     0.2307     0.8869         23        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        134        191      0.947       0.88      0.949      0.899
+   
+
 
 
 ## Gradio App
