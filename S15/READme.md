@@ -25,7 +25,7 @@ The YOLOv9 model was trained on Amazon SageMaker Studio using a custom dataset o
 1. **Data Preparation**: Collected and annotated images of manholes.
 2. **Model Configuration**: Configured the YOLOv9 model parameters and architecture.
 3. **Training**: Trained the model on SageMaker Studio with the prepared dataset.
- ![Example Image](images/image2.png)
+
 4.Traning steps
    Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
       88/99      12.9G     0.3369     0.2965      0.929         25        640: 1
