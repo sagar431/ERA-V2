@@ -112,6 +112,7 @@ The Gradio app was deployed on Hugging Face Spaces, making it accessible to a wi
 1. **Preparing the App**: Ensuring the Gradio app is fully functional locally.
 2. **Creating a Hugging Face Space**: Setting up a new space on Hugging Face.
 3. **Uploading the App**: Uploading the Gradio app and its dependencies to the Hugging Face Space.
+4. **Link** :https://huggingface.co/spaces/sagar007/YOLOV9
 
 ## Usage
 
