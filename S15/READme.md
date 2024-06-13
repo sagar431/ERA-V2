@@ -17,6 +17,8 @@ This project involves training a YOLOv9 model for manhole detection, building a 
 ## Introduction
 
 This project aims to detect manholes using the YOLOv9 model. The trained model is integrated into a Gradio app, which provides an interactive interface for users to test the model. The app is deployed on Hugging Face Spaces for easy access and use.
+oday’s deep learning methods focus on how to design the most appropriate objective functions so that the prediction results of the model can be closest to the ground truth. Meanwhile, an appropriate architecture that can facilitate acquisition of enough information for prediction has to be designed. Existing methods ignore a fact that when input data undergoes layer-by-layer feature extraction and spatial transformation, large amount of information will be lost. This paper will delve into the important issues of data loss when data is transmitted through deep networks, namely information bottleneck and reversible functions. We proposed the concept of programmable gradient information (PGI) to cope with the various changes required by deep networks to achieve multiple objectives. PGI can provide complete input information for the target task to calculate objective function, so that reliable gradient information can be obtained to update network weights. In addition, a new lightweight network architecture– Generalized Efficient Layer Aggregation Network (GELAN), based on gradient path planning is designed. GELAN’s architecture confirms that PGI has gained superior results on lightweight models. We verified the proposed GELAN and PGI on MS COCO dataset based object detection. The results show that GELAN only uses conventional convolution operators to achieve better parameter utilization than the state-of-the-art methods developed based on depth-wise convolution. PGI can be used for variety of models from lightweight to large. It can be used to obtain complete information, so that train-fromscratch models can achieve better results than state-of-theart models pre-trained using large datasets, the comparison results are shown in Figure 1. The source codes are at: https://github.com/WongKinYiu/yolov9.
+
 
 ## Model Training
 
@@ -26,8 +28,11 @@ The YOLOv9 model was trained on Amazon SageMaker Studio using a custom dataset o
 2. **Model Configuration**: Configured the YOLOv9 model parameters and architecture.
 3. **Training**: Trained the model on SageMaker Studio with the prepared dataset.
 
+   ![alt text](image3.png)
+
 4.Traning steps
-   Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
       88/99      12.9G     0.3369     0.2965      0.929         25        640: 1
                  Class     Images  Instances          P          R      mAP50   
                    all        134        191      0.884      0.928      0.946      0.895
@@ -104,6 +109,8 @@ The YOLOv9 model was trained on Amazon SageMaker Studio using a custom dataset o
 ## Gradio App
 
 A Gradio app was developed to provide an easy-to-use interface for testing the YOLOv9 model. The app allows users to upload images and get predictions on the presence and location of manholes.
+
+![alt text](images/image1.png)
 
 ## Deployment on Hugging Face
 
