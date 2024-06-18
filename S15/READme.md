@@ -1,32 +1,99 @@
-# Manhole Detection with YOLOv9
+Here is a `README.md` for your project based on the uploaded PDF about YOLOv9:
 
-This project involves training a YOLOv9 model for manhole detection, building a Gradio app for demonstration, and deploying it on Hugging Face.
+---
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Model Training](#model-training)
-3. [Gradio App](#gradio-app)
-4. [Deployment on Hugging Face](#deployment-on-hugging-face)
-5. [Usage](#usage)
-6. [Requirements](#requirements)
-7. [Installation](#installation)
-8. [Acknowledgments](#acknowledgments)
-9. [License](#license)
+# YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information
 
 ## Introduction
 
-This project aims to detect manholes using the YOLOv9 model. The trained model is integrated into a Gradio app, which provides an interactive interface for users to test the model. The app is deployed on Hugging Face Spaces for easy access and use.
-oday’s deep learning methods focus on how to design the most appropriate objective functions so that the prediction results of the model can be closest to the ground truth. Meanwhile, an appropriate architecture that can facilitate acquisition of enough information for prediction has to be designed. Existing methods ignore a fact that when input data undergoes layer-by-layer feature extraction and spatial transformation, large amount of information will be lost. This paper will delve into the important issues of data loss when data is transmitted through deep networks, namely information bottleneck and reversible functions. We proposed the concept of programmable gradient information (PGI) to cope with the various changes required by deep networks to achieve multiple objectives. PGI can provide complete input information for the target task to calculate objective function, so that reliable gradient information can be obtained to update network weights. In addition, a new lightweight network architecture– Generalized Efficient Layer Aggregation Network (GELAN), based on gradient path planning is designed. GELAN’s architecture confirms that PGI has gained superior results on lightweight models. We verified the proposed GELAN and PGI on MS COCO dataset based object detection. The results show that GELAN only uses conventional convolution operators to achieve better parameter utilization than the state-of-the-art methods developed based on depth-wise convolution. PGI can be used for variety of models from lightweight to large. It can be used to obtain complete information, so that train-fromscratch models can achieve better results than state-of-theart models pre-trained using large datasets, the comparison results are shown in Figure 1. The source codes are at: https://github.com/WongKinYiu/yolov9.
+YOLOv9 is an advanced real-time object detection system combining the concepts of Programmable Gradient Information (PGI) and Generalized Efficient Layer Aggregation Network (GELAN). The project addresses critical issues in deep learning such as information bottlenecks and data loss during feature extraction in deep networks. It offers significant improvements in parameter utilization and accuracy over existing state-of-the-art models.
 
+## Key Features
 
-## Model Training
+- **Programmable Gradient Information (PGI):** Enhances gradient reliability and optimizes network weight updates.
+- **Generalized Efficient Layer Aggregation Network (GELAN):** Provides a flexible and lightweight architecture with superior parameter utilization.
+- **Superior Performance:** Outperforms other real-time object detection models in terms of accuracy and parameter efficiency.
+- **Versatile Use:** Suitable for both lightweight and large-scale models.
 
-The YOLOv9 model was trained on Amazon SageMaker Studio using a custom dataset of manhole images. The training process involved the following steps:
+## Installation
 
-1. **Data Preparation**: Collected and annotated images of manholes.
-2. **Model Configuration**: Configured the YOLOv9 model parameters and architecture.
-3. **Training**: Trained the model on SageMaker Studio with the prepared dataset.
+To install the required dependencies, use the following commands:
+
+```bash
+# Clone the repository
+git clone https://github.com/WongKinYiu/yolov9.git
+cd yolov9
+
+# Install required Python packages
+pip install -r requirements.txt
+```
+
+## Usage
+
+To train YOLOv9 on the MS COCO dataset or your custom dataset:
+
+1. **Prepare the dataset:**
+   - Download the by anotation 
+
+2. **Train the model:**
+   ```bash
+   python train.py --data coco.yaml --cfg yolov9.yaml --weights yolov9.pt --batch-size 16
+   ```
+
+3. **Evaluate the model:**
+   ```bash
+   python test.py --data coco.yaml --weights runs/train/exp/weights/best.pt --batch-size 16
+   ```
+
+4. **Inference:**
+   ```bash
+   python detect.py --weights runs/train/exp/weights/best.pt --source data/images
+   ```
+
+## Architecture Overview
+
+### Programmable Gradient Information (PGI)
+- **Auxiliary Reversible Branch:** Generates reliable gradients and updates network parameters without additional inference costs.
+- **Multi-Level Auxiliary Information:** Aggregates gradients from different prediction heads to retain complete information for various target tasks.
+
+### Generalized Efficient Layer Aggregation Network (GELAN)
+- **Modular Design:** Supports various computational blocks, allowing customization for different inference devices.
+- **Lightweight and Fast:** Achieves high parameter efficiency and inference speed using conventional convolution operators.
+
+## Experimental Results
+
+YOLOv9 achieves state-of-the-art performance on the MS COCO dataset with significant improvements in accuracy and efficiency over previous models like YOLOv7 and YOLOv8. For detailed results, refer to the experimental section in the [paper](https://arxiv.org/abs/2402.13616).
+
+| Model       | # Params | FLOPs | AP<sub>50:95</sub> | AP<sub>50</sub> | AP<sub>75</sub> | AP<sub>S</sub> | AP<sub>M</sub> | AP<sub>L</sub> |
+|-------------|----------|-------|-------------------|----------------|----------------|----------------|----------------|----------------|
+| YOLOv9-S    | 7.1M     | 26.4G | 46.8%             | 63.4%          | 50.7%          | 26.6%          | 56.0%          | 64.5%          |
+| YOLOv9-M    | 20.0M    | 76.3G | 51.4%             | 68.1%          | 56.1%          | 33.6%          | 57.0%          | 68.0%          |
+| YOLOv9-C    | 25.3M    | 102.1G| 53.0%             | 70.2%          | 57.8%          | 36.2%          | 58.5%          | 69.3%          |
+| YOLOv9-E    | 57.3M    | 189.0G| 55.6%             | 72.8%          | 60.6%          | 40.2%          | 61.0%          | 71.4%          |
+
+## Citation
+
+If you use this code or models in your research, please cite the original paper:
+
+```
+@article{Wang2024YOLOv9,
+  title={YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information},
+  author={Chien-Yao Wang, I-Hau Yeh, Hong-Yuan Mark Liao},
+  journal={arXiv preprint arXiv:2402.13616},
+  year={2024}
+}
+```
+
+## Acknowledgements
+
+We thank the National Center for High-performance Computing (NCHC) for providing computational and storage resources.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
 
    ![alt text](image3.png)
 
@@ -119,7 +186,9 @@ The Gradio app was deployed on Hugging Face Spaces, making it accessible to a wi
 1. **Preparing the App**: Ensuring the Gradio app is fully functional locally.
 2. **Creating a Hugging Face Space**: Setting up a new space on Hugging Face.
 3. **Uploading the App**: Uploading the Gradio app and its dependencies to the Hugging Face Space.
-4. **Link** :https://huggingface.co/spaces/sagar007/YOLOV9
+
+### **[YOLOv9 Demo on Hugging Face Spaces](https://huggingface.co/spaces/sagar007/YOLOV9)**
+
 
 ## Usage
 
