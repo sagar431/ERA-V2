@@ -116,6 +116,15 @@ else:
 - A [Gradio](https://gradio.app/) app was created to demonstrate the BPE encoding process.
 - The app is deployed on [Hugging Face](https://huggingface.co/), enabling easy access and interaction.
 
+## View the Demo
+
+You can view the live demo on [Hugging Face Space](https://huggingface.co/spaces/sagar007/BPE).
+
+- ![Gradio App](./images/image1.png)
+  
+
+
+
 ## Usage
 
 1. **Text Input:** Enter or paste your Hindi text into the input field.
