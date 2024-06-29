@@ -54,7 +54,7 @@ class MLP(nn.Module):
         self.c_proj.NANOGPT_SCALE_INIT = 1
 
     def forward(self, x):
-        x = self.c_fc(x)
+        x = self.c_fc(x) 
         x = self.gelu(x)
         x = self.c_proj(x)
         return x
