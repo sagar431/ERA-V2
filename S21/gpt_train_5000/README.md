@@ -10,6 +10,17 @@ This repository contains a PyTorch implementation of a GPT-2 model. The implemen
 4. [Usage](#usage)
 5. [Requirements](#requirements)
 6. [Acknowledgements](#acknowledgements)
+## Hugging face App link
+# My AI Project
+
+## Hugging Face App
+
+[My Hugging Face App](https://huggingface.co/spaces/sagar007/GPT-2)
+
+## Gradio App
+
+![Gradio App](images/image1.png)
+
 
 ## Model Architecture
 The model is based on the architecture described in the GPT-2 paper, including the following components:
