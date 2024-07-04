@@ -5,7 +5,7 @@
 * **My AI Odyssey: Mastering Deep Learning Concepts** 🚀
 
   
-![MasterHead](https://media.licdn.com/dms/image/C4D12AQHdpDAGD5uy-Q/article-inline_image-shrink_1500_2232/0/1616944651622?e=1714608000&v=beta&t=p79aZn3QNCwy3FWXVcwhPM6F9Pza7l0rkDOPwuuMvbc)
+![MasterHead](https://media.licdn.com/dms/image/D5612AQEReRdkC5K3_A/article-cover_image-shrink_720_1280/0/1702441745439?e=1725494400&v=beta&t=faR8N6knWmC3dkVfbxvkPqasK9Z9h5Kp3UFwEPWtRrI)
 
 **Brief Description:**
 
