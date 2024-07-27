@@ -1,4 +1,4 @@
-Sure! Below is a template for a `README.md` file for your FastSAM app built in Gradio and deployed on Hugging Face.
+
 
 ```markdown
 # FastSAM App
@@ -13,7 +13,7 @@ Welcome to the FastSAM app! This application is built using Gradio and deployed 
 
 ## Demo
 
-[![FastSAM Demo](path_to_demo_image)](https://huggingface.co/spaces/your_username/fastsam)
+[![FastSAM Demo](image1)](https://huggingface.co/spaces/sagar007/SegmentVision)
 
 ## Getting Started
 
