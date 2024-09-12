@@ -4,7 +4,7 @@
 
 This project implements a ChatGPT-like AI assistant capable of processing and responding to text, image, and audio inputs. It integrates state-of-the-art models for each modality to provide coherent, context-aware responses.
 
-![Project Diagram](images/image1.png)
+![Project Diagram](images/image.png)
 
 ## Features
 
