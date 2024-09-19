@@ -33,7 +33,7 @@
     * Python foundations for building AI applications 🐍
 * **Sessions 4-6: Building Neural Networks with PyTorch**
     * Understanding kernels, channels, and embeddings 🧱
-    * Backpropagation and advanced architectures 🔄
+    * Backpropagation and advanced architectures i like 🔄
     * Hands-on PyTorch coding practice 🔥
 * **Sessions 7-9: Coding Practice and Advanced Techniques**
     * In-depth coding challenges 💪
